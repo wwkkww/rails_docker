@@ -38,3 +38,5 @@ blocks:
             - 'docker-compose run drkiq rake db:migrate'
             - 'docker-compose run drkiq rake db:test:prepare'
             - docker-compose run drkiq rails test
+      secrets:
+        - name: dockerhub
